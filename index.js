@@ -27,12 +27,13 @@
 // selectionSort([1,3,5,8,7,2]);
 
 function linearSearch(lst, val){
+  console.log('the list is ', lst);
+  console.log('value searching is ', val);
   for (var i = 0; i< lst.length; i++){
     if (lst[i] == val){
-      // console.log('the list is ', lst);
-      return 'position of value is ' + i;
-    }
-  }  
+      console.log('position of value is ' + i); 
+    } 
+  } 
 }
 
 linearSearch([1,2,4,6,7,8],7);

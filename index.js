@@ -1,4 +1,4 @@
-
+/* eslint-disable no-unused-vars*/
 function selectionSort(lst) {
   console.log('original list is', lst.toString());
   var len = lst.length;
@@ -17,7 +17,6 @@ function selectionSort(lst) {
   }
   console.log('selection sorted list ', lst);
 }
-/* eslint-disable no-unused-vars*/
 // selectionSort([1, 3, 5, 8, 7, 2]);
 // selectionSort([4, 3, 1, 7, 2, 9]);
 /* esline-enable*/
@@ -59,6 +58,7 @@ function bubbleSort(lst) {
 // bubbleSort([1, 3, 5, 8, 7, 2]);
 // bubbleSort([4, 3, 1, 7, 2, 9]);
 /* esline-enable*/
+
 function insertionSort(lst) {
   var len = lst.length;
   var minIndex, temp;
@@ -78,6 +78,9 @@ function insertionSort(lst) {
 
 function mergeSort(lst) {
   var len = lst.length;
+  if (len < 2) {
+    return;
+  }
   var halflen = Math.round(len / 2);
   var listA = lst.slice(0, halflen)
   var listB = lst.slice(halflen);
